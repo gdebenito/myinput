@@ -11,7 +11,7 @@ if (!stats.isDirectory()) {
 }
 
 function inputTemplate(inputData) {
-  return '- [ ] ' + inputData;
+  return '- [ ] ' + inputData + '\n';
 }
 
 // Function to handle data from HTML
