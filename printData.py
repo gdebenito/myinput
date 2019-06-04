@@ -41,7 +41,3 @@ def printData (maData):
                 maData = maData.replace(myMatch, myReplace)
                 writeToFile(path,maData)
         writeToFile(inboxPath,maData)
-                
-d = 'hola @gonzalo@ esto es para ti'
-
-printData(d)
