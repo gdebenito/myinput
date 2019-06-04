@@ -5,8 +5,8 @@ gi.require_version('Gtk', '3.0')
 gi.require_version('Gdk', '3.0')
 from gi.repository import Gtk, GLib, Gdk
 
-path = "/home/gon/docs/bandeja-de-entrada.md"
-
+# import printData function
+from printData import printData
 
 class EntryWindow(Gtk.Window):
 
@@ -34,9 +34,7 @@ class EntryWindow(Gtk.Window):
 
     def cb_activate(self, entry):
         inputData = entry.get_text()
-        f= open(path,"a+") # append
-        f.write("- [ ] " + inputData + "\n")
-        f.close()
+        printData(inputData)
         entry.set_text("")
         
     def close(event):
