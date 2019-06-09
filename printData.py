@@ -4,7 +4,7 @@
 
 
 # Import configuration
-from config import rootPath, inboxPath, personPath, placePath
+from config import rootPath, inboxPath, personPath, placePath, projectPath
 
 # Import regex
 import re
@@ -40,4 +40,14 @@ def printData (maData):
                 myReplace = '[' + name + '](' + path + ')'
                 maData = maData.replace(myMatch, myReplace)
                 writeToFile(path,maData)
+
+        if "%" in maData:
+                name = re.search('%(.*)%',maData).group(1)
+                print(name)
+                path = os.path.join(projectPath,name + '.md')
+                myMatch = '%' + name + '%'
+                myReplace = '[' + name + '](' + path + ')'
+                maData = maData.replace(myMatch, myReplace)
+                writeToFile(path,maData)
+                
         writeToFile(inboxPath,maData)
