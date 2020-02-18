@@ -49,5 +49,5 @@ def printData (maData):
                 myReplace = '[' + name + '](' + path + ')'
                 maData = maData.replace(myMatch, myReplace)
                 writeToFile(path,maData)
-                
+
         writeToFile(inboxPath,maData)
