@@ -1,20 +1,24 @@
 # Input application
 
-Set in the configuration the file you want to append notes.
-I use markdown. Then I add checkboxes!!
-like this - [ ] task!
+## Purpose
 
-## To Use
+I need a tool to dump my **TODO** thoughts in a fast and simple way.
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+This Input Application launches a gtk frame with a input box.
 
-```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
-npm start
+The text you input, is redirected to a file you assign.
+
+This way I can stack all my todos in a **Inbox** file and check later!
+
+
+## Workflow
+
+1. Add tasks/todos with myinput application
+2. Focus -> Finish what I'm doing
+3. Organize todos/ calendar schedule / archive
+
+## Launch application
+
+```
+./main.py
 ```

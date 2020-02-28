@@ -36,7 +36,7 @@ class EntryWindow(Gtk.Window):
         inputData = entry.get_text()
         printData(inputData)
         entry.set_text("")
-
+        
     def close(event):
         sys.exit() # if you want to exit the entire thing
 

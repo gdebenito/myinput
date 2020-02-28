@@ -1,5 +1,4 @@
 rootPath = "/home/gon/docs/"
-inboxPath = rootPath + "bandeja-de-entrada.md"
-personPath = rootPath + "@personas@"
-placePath = rootPath + "#entornos#"
-projectPath = rootPath + "%proyectos%"
+inboxPath = rootPath + "be.org"
+prefixText= "- [ ] "
+sufixText= "\n"
